@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Responsive One Page website template</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      
+   </head>
+   <body class="size-1140">
+        <div id="topbar">
+            <div class="line">
+               <div class="s-12 m-6 l-6">
+                  <p>CONTACT US: <strong>+216 28 086 908</strong> | <strong>amine.chagour28@ieee.org</strong></p>
+               </div>
+               <div class="s-12 m-6 l-6">
+                  <div class="social right">
+                    <a href="https://facebook.com"><i class="icon-facebook_circle"></i></a> 
+                    <a href="https://twitter.com"><i class="icon-twitter_circle"></i></a> 
+                    <a href="https://google.com"><i class="icon-google_plus_circle"></i></a> 
+                    <a href="https://instagram.com"><i class="icon-instagram_circle"></i></a>
+                  </div>
+               </div>
+            </div>  
+         </div> 
+         <nav>
+            <div class="line">
+              <div class="s-12 l-2">
+                  <p class="logo"><strong>Bien</strong>venue</p>
+               </div>
+               <div class="top-nav s-12 l-10">
+                  <p class="nav-text">Custom menu text</p>
+                  <ul class="right">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="features.html">Features</a></li>
+                     <li><a href="about_us.html">About Us</a></li>
+                     <li><a href="our_work.html">Our Work</a></li>
+                     <li><a href="services.html">Services</a></li>
+                     <li><a href="contact.php">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+          
+
+         <!-- FEATURES -->
+         <div id="features">
+            <div class="line">
+               <div class="margin">
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-tablet icon3x"></i>
+                     <h2>01. Etude</h2>
+                     <p>Etude de faisabilité de l'idée ainsi des avantages et des contraintes.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-isight icon3x"></i>
+                     <h2>02. Planification</h2>
+                     <p>Mettre en œuvre d'une stratégie à suivre avec des délais à respecter.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-star icon3x"></i>
+                     <h2>03. Création</h2>
+                     <p>Appliquer ce qui a été planifié en suivant un cadre méthodologique.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-heart icon3x"></i>
+                     <h2>04. Succées</h2>
+                     <p>Finalisation du projet et la préparation pour la phase de lancement.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FOOTER -->
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2018, Chagour Design - graphic</p>
+               <p>All images is purchased from personal Camera. Do not use the images in your website or other applications.</p>
+            </div>
+            <div class="s-12 l-6">
+               <a class="right" href="http://www.facebook.com/amine.chagour" title="Responsee - lightweight responsive framework">Design and coding<br> by Chagour Med Amine</a>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {
+            var theme_slider = $("#owl-demo");
+            $("#owl-demo").owlCarousel({
+                navigation: false,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                autoPlay: 6000,
+                addClassActive: true,
+             // transitionStyle: "fade",
+                singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: true,
+                navigationText: ["&#xf007","&#xf006"],
+                pagination: false,
+                singleItem: true
+            });
+        
+            // Custom Navigation Events
+            $(".next-arrow").click(function() {
+                theme_slider.trigger('owl.next');
+            })
+            $(".prev-arrow").click(function() {
+                theme_slider.trigger('owl.prev');
+            })     
+        }); 
+      </script>
+   </body>
+</html>

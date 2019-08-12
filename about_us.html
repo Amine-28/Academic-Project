@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Responsive One Page website template</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      
+   </head>
+   <body class="size-1140">
+     
+         <div id="topbar">
+            <div class="line">
+               <div class="s-12 m-6 l-6">
+                  <p>CONTACT US: <strong>+216 28 086 908</strong> | <strong>amine.chagour28@ieee.org</strong></p>
+               </div>
+               <div class="s-12 m-6 l-6">
+                  <div class="social right">
+                    <a href="https://facebook.com"><i class="icon-facebook_circle"></i></a> 
+                    <a href="https://twitter.com"><i class="icon-twitter_circle"></i></a> 
+                    <a href="https://google.com"><i class="icon-google_plus_circle"></i></a> 
+                    <a href="https://instagram.com"><i class="icon-instagram_circle"></i></a>
+                  </div>
+               </div>
+            </div>  
+         </div> 
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <p class="logo"><strong>Bien</strong>venue</p>
+               </div>
+               <div class="top-nav s-12 l-10">
+                  <p class="nav-text">Custom menu text</p>
+                  <ul class="right">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="features.html">Features</a></li>
+                     <li><a href="about_us.html">About Us</a></li>
+                     <li><a href="our_work.html">Our Work</a></li>
+                     <li><a href="services.html">Services</a></li>
+                     <li><a href="contact.php">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+     
+         
+         <!-- ABOUT US -->
+         <div id="about-us">
+            <div class="s-12 m-12 l-6 media-container">
+               <img src="img/about.jpg" alt="">
+            </div>
+            <article class="s-12 m-12 l-6">
+               <h2>We are<br> Web Design<br> Heroes</h2>
+               <p>ADD conçoit, développe, maintient et héberge votre site web et/ou vos applications pour vous permettre de profiter pleinement d’un nouveau canal de communication incontournable et à fort potentiel de croissance.
+               </p> 
+                <p>Nous développons aujourd'hui des sites Web dynamiques et intelligents ou de réelles applications administrables par un navigateur, en utilisant la plupart des langages associés à l'Internet.
+               </p>
+               <div class="about-us-icons">
+                  <i class="icon-paperplane_ico"></i> <i class="icon-trophy"></i> <i class="icon-clock"></i>
+               </div>
+            </article>
+         </div>
+         
+         
+      <!-- FOOTER -->
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2018, Chagour Design - graphic</p>
+               <p>All images is purchased from personal Camera. Do not use the images in your website or other applications.</p>
+            </div>
+            <div class="s-12 l-6">
+               <a class="right" href="http://www.facebook.com/amine.chagour" title="Responsee - lightweight responsive framework">Design and coding<br> by Chagour Med Amine</a>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {
+            var theme_slider = $("#owl-demo");
+            $("#owl-demo").owlCarousel({
+                navigation: false,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                autoPlay: 6000,
+                addClassActive: true,
+             // transitionStyle: "fade",
+                singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: true,
+                navigationText: ["&#xf007","&#xf006"],
+                pagination: false,
+                singleItem: true
+            });
+        
+            // Custom Navigation Events
+            $(".next-arrow").click(function() {
+                theme_slider.trigger('owl.next');
+            })
+            $(".prev-arrow").click(function() {
+                theme_slider.trigger('owl.prev');
+            })     
+        }); 
+      </script>
+   </body>
+</html>
